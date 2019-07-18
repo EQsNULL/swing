@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 
 public class 练习_SplitPanel {
     public static void main(String[] args) {
+        //设置皮肤
+        setLookAndFeel();
         JFrame f = new JFrame("LoL");
         f.setSize(400, 300);
         f.setLocation(200, 200);
@@ -54,7 +56,26 @@ public class 练习_SplitPanel {
         switchPic(b3, "annie", lPic);
     }
 
+    private static void setLookAndFeel() {
+        try {
+            javax.swing.UIManager.setLookAndFeel("com.birosoft.liquid.LiquidLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.mcwin.McWinLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.luna.LunaLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.aluminium.AluminiumLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.bernstein.BernsteinLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.hifi.HiFiLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.mint.MintLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.aero.AeroLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.fast.FastLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
+//          javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.noire.NoireLookAndFeel");
+        } catch (Exception e) {
+            e.printStackTrace();
+            // handle exception
+        }
 
+    }
 
     private static void switchPic(JButton b1, String fileName, JLabel lPic) {
         b1.addActionListener(new ActionListener() {
