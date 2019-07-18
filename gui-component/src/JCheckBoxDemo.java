@@ -16,6 +16,10 @@ public class JCheckBoxDemo {
         //判断 是否 被 选中
         System.out.println(bCheckBox2.isSelected());
 
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(bCheckBox);
+        bg.add(bCheckBox2);
+
         f.add(bCheckBox);
         f.add(bCheckBox2);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
