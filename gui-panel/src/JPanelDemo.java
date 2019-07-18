@@ -17,7 +17,6 @@ public class JPanelDemo {
 
         // 这一句可以没有，因为JPanel默认就是采用的FlowLayout
 //        p1.setLayout(new FlowLayout());
-2
         JButton b1 = new JButton("英雄1");
         JButton b2 = new JButton("英雄2");
         JButton b3 = new JButton("英雄3");
