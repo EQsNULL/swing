@@ -9,6 +9,7 @@ public class BorderLayoutDemo {
         f.setLocation(200, 200);
         // 设置布局器为BorderLayerout
         // 容器上的组件按照上北下南左西右东中的顺序摆放
+        //不要这一行也可以
         f.setLayout(new BorderLayout());
 
         JButton b1 = new JButton("洪七");
