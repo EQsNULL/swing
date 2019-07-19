@@ -2,13 +2,13 @@ import javax.swing.*;
 
 public class 初始化线程 {
     public static void main(String[] args) {
-        new TestFrame().setVisible(true);
+//        new TestFrame().setVisible(true);
 
-//      SwingUtilities.invokeLater(new Runnable() {
-//          public void run() {
-//              new TestFrame().setVisible(true);
-//          }
-//      });
+      SwingUtilities.invokeLater(new Runnable() {
+          public void run() {
+              new TestFrame().setVisible(true);
+          }
+      });
     }
 
     static class TestFrame extends JFrame {
