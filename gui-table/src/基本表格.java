@@ -8,6 +8,7 @@ public class 基本表格 {
         f.setSize(400, 300);
         f.setLocation(200, 200);
         f.setLayout(new BorderLayout());
+        f.setResizable(false);
 
         // 表格上的title
         String[] columnNames = new String[]{"id", "name", "hp", "damage"};
@@ -20,9 +21,9 @@ public class 基本表格 {
 
         // 把sp而非JTable加入到JFrame上，
         f.add(sp, BorderLayout.CENTER);
-
-
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // 设置列宽度
+        t.getColumnModel().getColumn(0).setPreferredWidth(200);
 
         f.setVisible(true);
     }
