@@ -29,8 +29,6 @@ public class 初始化线程 {
 
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-            setVisible(true);
-
             System.out.println("当前线程是否是 事件调度线程: " + SwingUtilities.isEventDispatchThread());
 
         }
