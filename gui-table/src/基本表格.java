@@ -10,12 +10,17 @@ public class 基本表格 {
         f.setLayout(new BorderLayout());
 
         // 表格上的title
-        String[] columnNames = new String[] { "id", "name", "hp", "damage" };
+        String[] columnNames = new String[]{"id", "name", "hp", "damage"};
         // 表格中的内容，是一个二维数组
-        String[][] heros = new String[][] { { "1", "盖伦", "616", "100" },
-                { "2", "提莫", "512", "102" }, { "3", "奎因", "832", "200" } };
+        String[][] heros = new String[][]{{"1", "盖伦", "616", "100"},
+                {"2", "提莫", "512", "102"}, {"3", "奎因", "832", "200"}};
         JTable t = new JTable(heros, columnNames);
-        f.add(t, BorderLayout.CENTER);
+        // 根据t创建 JScrollPane
+        JScrollPane sp = new JScrollPane(t);
+
+        // 把sp而非JTable加入到JFrame上，
+        f.add(sp, BorderLayout.CENTER);
+
 
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
