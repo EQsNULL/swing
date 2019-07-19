@@ -2,7 +2,6 @@ package TableModel与DAO结合;
 
 
 import TableModel与DAO结合.dao.HeroDAO;
-import TableModel与DAO结合.pojo.Hero;
 
 import javax.swing.*;
 import java.awt.*;
