@@ -28,7 +28,6 @@ public class 长耗时任务线程 {
                 try {
                     Thread.sleep(5000);
                 } catch (InterruptedException e1) {
-                    // TODO Auto-generated catch block
                     e1.printStackTrace();
                 }
                 l.setText("b1任务执行完毕");
@@ -47,7 +46,6 @@ public class 长耗时任务线程 {
                         try {
                             Thread.sleep(5000);
                         } catch (InterruptedException e1) {
-                            // TODO Auto-generated catch block
                             e1.printStackTrace();
                         }
                         l.setText("b2任务执行完毕");

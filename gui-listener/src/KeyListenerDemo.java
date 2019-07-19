@@ -46,7 +46,6 @@ public class KeyListenerDemo {
 
             //键被按下
             public void keyPressed(KeyEvent e) {
-                // TODO Auto-generated method stub
 
             }
 
